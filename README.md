@@ -1,9 +1,9 @@
 # Prerequisites
 
-[] - You need to have the aws cli configured
-[] - You need to create your own `backend.hcl` file
-[] - You need to create your own `terraform.tfvars` file
-[] - Purchase a domain name and create a hosted zone - If you haven't done this prior to the labs then you can created the hosted zone with terraform. If you do this then consider a PR for making adding the hosted zone configurable
+- [] - You need to have the aws cli configured
+- [] - You need to create your own `backend.hcl` file
+- [] - You need to create your own `terraform.tfvars` file
+- [] - Purchase a domain name and create a hosted zone - If you haven't done this prior to the labs then you can created the hosted zone with terraform. If you do this then consider a PR for making adding the hosted zone configurable
 
 **You need a backend.hcl and terraform.tfvars in each Lab directory**
 
@@ -52,6 +52,11 @@ enable_alb_access_logs = true
 enable_waf_logging     = true
 ```
 
+# General Todos
+
+- [] - Use a variable for the secret header value
+- [] - Add appropriate outputs for labs
+
 # Running Labs
 
 **Lab 1 will be used as an example**
@@ -76,8 +81,8 @@ terraform destroy --auto-approve
 
 ## Todo
 
-[] Deliverables
-[] Questions
+- [] Deliverables
+- [] Questions
 
 ## Deliverables
 
@@ -87,13 +92,13 @@ terraform destroy --auto-approve
 
 ## Todo
 
-[] Deliverables for 2B
-[] Deliverables for 2A
-[] 2B Class Questions
-[] Be a Man
-[] Be a Man A
-[] Be a Man B
-[] Be a Man C
+- [] Deliverables for 2B
+- [] Deliverables for 2A
+- [] 2B Class Questions
+- [] Be a Man
+- [] Be a Man A
+- [] Be a Man B
+- [] Be a Man C
 
 ## Deliverables
 
