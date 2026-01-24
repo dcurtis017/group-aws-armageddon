@@ -5,6 +5,8 @@
 [] - You need to create your own `terraform.tfvars` file
 [] - Purchase a domain name and create a hosted zone - If you haven't done this prior to the labs then you can created the hosted zone with terraform. If you do this then consider a PR for making adding the hosted zone configurable
 
+**You need a backend.hcl and terraform.tfvars in each Lab directory**
+
 ```hcl
 bucket = "name-of-bucket-for-terraform-state"
 key    = "class7/armageddon/lab1.tfstate"
@@ -97,4 +99,17 @@ terraform destroy --auto-approve
 
 # Modules
 
-- When you change a module, make sure to run `terraform init -upgrade` so your project will get the latest version of the module
+When you change a module, make sure to run `terraform init -upgrade` so your project will get the latest version of the module.
+
+## Module Overview
+
+| Module                                       | Purpose                                                                             |
+| -------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [VPC](modules/vpc/README.md)                 | Creates VPC with public/private subnets, internet gateway, and optional NAT gateway |
+| [RDS](modules/rds/README.md)                 | Provisions managed relational database with secure access and credential management |
+| [Web Service](modules/web_service/README.md) | Deploys EC2 instance with Application Load Balancer and security groups             |
+| [ACM](modules/acm/README.md)                 | Creates and validates SSL/TLS certificate with DNS validation via Route53           |
+| [CloudFront](modules/cloudfront/README.md)   | Configures global CDN distribution with caching and origin protection               |
+| [WAF](modules/waf/README.md)                 | Implements Web Application Firewall with DDoS protection and logging                |
+
+For detailed information about each module including variables, outputs, and usage examples, refer to the individual module README files linked above.
