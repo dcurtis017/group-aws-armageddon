@@ -7,12 +7,16 @@
 
 **You need a backend.hcl and terraform.tfvars in each Lab directory**
 
+**backend.hcl**
+
 ```hcl
 bucket = "name-of-bucket-for-terraform-state"
 key    = "class7/armageddon/lab1.tfstate"
 region = "us-east-1"
 use_lockfile = true
 ```
+
+**terraform.tfvars**
 
 ```tfvars
 region = "us-east-1"
