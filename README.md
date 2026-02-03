@@ -96,13 +96,13 @@ terraform destroy --auto-approve
 
 ## Todo
 
-- [] Deliverables for 2B
-- [] Deliverables for 2A
-- [] 2B Class Questions
-- [] Be a Man
-- [] Be a Man A
-- [] Be a Man B
-- [] Be a Man C
+- [x] Deliverables for 2B
+- [x] Deliverables for 2A
+- [x] 2B Class Questions
+- [x] Be a Man
+- [x] Be a Man A
+- [x] Be a Man B
+- [] Lab 2 Be a Man C -- Need help
 
 ## Deliverables
 

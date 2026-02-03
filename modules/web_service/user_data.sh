@@ -134,11 +134,12 @@ app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 8600 # control browser caching for sta
 @app.after_request
 def log_response(response):
     app.logger.info(
-        "PATH=%s STATUS=%s RESPONSE_HEADERS=%s REQUEST_HEADERS=%s",
+        "PATH=%s STATUS=%s RESPONSE_HEADERS=%s REQUEST_HEADERS=%s, COOKIES=%s",
         request.path,
         response.status_code,
         dict(response.headers),
         dict(request.headers),
+        dict(request.cookies),
     )
     return response
 
