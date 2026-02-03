@@ -68,7 +68,7 @@ import json
 import os
 import boto3
 import pymysql
-from flask import Flask, request, make_response
+from flask import Flask, request, make_response, send_file
 import logging
 from logging.handlers import RotatingFileHandler
 from datetime import datetime, timezone
@@ -131,13 +131,14 @@ app.logger.addHandler(handler) # attach our custom logger to the logger flask ac
 app.logger.setLevel(logging.INFO)
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 8600 # control browser caching for static files
 
-#@app.after_request
+@app.after_request
 def log_response(response):
     app.logger.info(
-        "PATH=%s STATUS=%s HEADERS=%s",
+        "PATH=%s STATUS=%s RESPONSE_HEADERS=%s REQUEST_HEADERS=%s",
         request.path,
         response.status_code,
         dict(response.headers),
+        dict(request.headers),
     )
     return response
 
@@ -214,7 +215,7 @@ def list_notes():
 def public_feed():
     server_time = datetime.now(timezone.utc)
     message = "Message of minute {}".format(server_time.minute)
-    response = make_response(jsonify({"server_time": server_time, "message": message}))
+    response = make_response(json.dumps({"server_time": server_time, "message": message}, default=str))
     response.headers["Cache-Control"] = "public, s-maxage=30, max-age=0"
     return response
 
@@ -222,8 +223,15 @@ def public_feed():
 def user_feed():
     server_time = datetime.now(timezone.utc)
     message = "Never cache so unique uuid is {}".format(uuid.uuid4())
-    response = make_response(jsonify({"server_time": server_time, "message": message}))
+    response = make_response(json.dumps({"server_time": server_time, "message": message}, default=str))
     response.headers["Cache-Control"] = "private, no-store"
+    return response
+
+@app.route("/static/index.html")
+def static_index():
+    response = send_file("static/index.html")
+    response.set_etag("armageddon1")
+    response.headers["Cache-Control"] = "public, max-age=30"
     return response
 
 if __name__ == "__main__":
