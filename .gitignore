@@ -46,6 +46,7 @@ terraform.rc
 
 # Ignore keys
 *.json 
+!Deliverables/**/*.json
 !tests/event.json
 !tests/output.json
 *.pem

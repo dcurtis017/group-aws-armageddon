@@ -1,0 +1,16 @@
+{
+    "AttachedPolicies": [
+        {
+            "PolicyName": "CloudWatchAgentServerPolicy",
+            "PolicyArn": "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
+        },
+        {
+            "PolicyName": "AmazonSSMManagedInstanceCore",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+        },
+        {
+            "PolicyName": "SecretsManagerReadWrite",
+            "PolicyArn": "arn:aws:iam::aws:policy/SecretsManagerReadWrite"
+        }
+    ]
+}

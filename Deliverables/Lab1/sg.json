@@ -1,0 +1,126 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-085cd6a3d7b90fe01",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Owner",
+                    "Value": "dc"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "armageddon-lab1-rds-sg"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "Armageddon-Lab1"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Terraform"
+                }
+            ],
+            "VpcId": "vpc-0a758fdfa5435b1b9",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:264799070891:security-group/sg-085cd6a3d7b90fe01",
+            "OwnerId": "264799070891",
+            "GroupName": "armageddon-lab1-rds-sg",
+            "Description": "RDS Security Group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 3306,
+                    "ToPort": 3306,
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "264799070891",
+                            "GroupId": "sg-0d328639af036533f"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0ea85e501b39c5967",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "Armageddon-Lab1"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Terraform"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "armageddon-lab1-Web-Server-SG"
+                },
+                {
+                    "Key": "Owner",
+                    "Value": "dc"
+                }
+            ],
+            "VpcId": "vpc-0a758fdfa5435b1b9",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:264799070891:security-group/sg-0ea85e501b39c5967",
+            "OwnerId": "264799070891",
+            "GroupName": "armageddon-lab1-Web-Server-SG",
+            "Description": "Allow HTTP inbound traffic from anywhere",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 443,
+                    "ToPort": 443,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}

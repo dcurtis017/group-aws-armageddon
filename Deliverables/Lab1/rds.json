@@ -1,0 +1,125 @@
+{
+    "DBInstances": [
+        {
+            "DBInstanceIdentifier": "armageddon-lab1-rds-instance",
+            "DBInstanceClass": "db.t3.micro",
+            "Engine": "mysql",
+            "DBInstanceStatus": "available",
+            "MasterUsername": "admin",
+            "DBName": "labdb",
+            "Endpoint": {
+                "Address": "armageddon-lab1-rds-instance.cc3gmim4e8mb.us-east-1.rds.amazonaws.com",
+                "Port": 3306,
+                "HostedZoneId": "Z2R2ITUGPM61AM"
+            },
+            "AllocatedStorage": 20,
+            "InstanceCreateTime": "2026-01-10T15:12:48.452000+00:00",
+            "PreferredBackupWindow": "03:16-03:46",
+            "BackupRetentionPeriod": 0,
+            "DBSecurityGroups": [],
+            "VpcSecurityGroups": [
+                {
+                    "VpcSecurityGroupId": "sg-085cd6a3d7b90fe01",
+                    "Status": "active"
+                }
+            ],
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mysql8.0",
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ],
+            "AvailabilityZone": "us-east-1a",
+            "DBSubnetGroup": {
+                "DBSubnetGroupName": "armageddon-lab1-rds-subnet-group",
+                "DBSubnetGroupDescription": "Managed by Terraform",
+                "VpcId": "vpc-0a758fdfa5435b1b9",
+                "SubnetGroupStatus": "Complete",
+                "Subnets": [
+                    {
+                        "SubnetIdentifier": "subnet-0df3592a4a668ab52",
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1b"
+                        },
+                        "SubnetOutpost": {},
+                        "SubnetStatus": "Active"
+                    },
+                    {
+                        "SubnetIdentifier": "subnet-0ff05f68b3c62d803",
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1a"
+                        },
+                        "SubnetOutpost": {},
+                        "SubnetStatus": "Active"
+                    },
+                    {
+                        "SubnetIdentifier": "subnet-045358b86736e1db0",
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1c"
+                        },
+                        "SubnetOutpost": {},
+                        "SubnetStatus": "Active"
+                    }
+                ]
+            },
+            "PreferredMaintenanceWindow": "sat:03:47-sat:04:17",
+            "PendingModifiedValues": {},
+            "MultiAZ": false,
+            "EngineVersion": "8.0.43",
+            "AutoMinorVersionUpgrade": true,
+            "ReadReplicaDBInstanceIdentifiers": [],
+            "LicenseModel": "general-public-license",
+            "StorageThroughput": 0,
+            "OptionGroupMemberships": [
+                {
+                    "OptionGroupName": "default:mysql-8-0",
+                    "Status": "in-sync"
+                }
+            ],
+            "PubliclyAccessible": false,
+            "StorageType": "gp2",
+            "DbInstancePort": 0,
+            "StorageEncrypted": false,
+            "DbiResourceId": "db-4ERPS6WVVXGLKYSKIKRKCVMTVM",
+            "CACertificateIdentifier": "rds-ca-rsa2048-g1",
+            "DomainMemberships": [],
+            "CopyTagsToSnapshot": false,
+            "MonitoringInterval": 0,
+            "DBInstanceArn": "arn:aws:rds:us-east-1:264799070891:db:armageddon-lab1-rds-instance",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "DatabaseInsightsMode": "standard",
+            "PerformanceInsightsEnabled": false,
+            "DeletionProtection": false,
+            "AssociatedRoles": [],
+            "TagList": [
+                {
+                    "Key": "Environment",
+                    "Value": "Armageddon-Lab1"
+                },
+                {
+                    "Key": "Owner",
+                    "Value": "dc"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Terraform"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "armageddon-lab1-rds-instance"
+                }
+            ],
+            "CustomerOwnedIpEnabled": false,
+            "NetworkType": "IPV4",
+            "ActivityStreamStatus": "stopped",
+            "BackupTarget": "region",
+            "CertificateDetails": {
+                "CAIdentifier": "rds-ca-rsa2048-g1",
+                "ValidTill": "2027-01-10T15:11:30+00:00"
+            },
+            "DedicatedLogVolume": false,
+            "IsStorageConfigUpgradeAvailable": false,
+            "EngineLifecycleSupport": "open-source-rds-extended-support"
+        }
+    ]
+}

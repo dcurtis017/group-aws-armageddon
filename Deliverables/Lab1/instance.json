@@ -1,0 +1,179 @@
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-085d59ba577a2ccab",
+            "OwnerId": "264799070891",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2026-01-10T15:09:25+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0bc5b06e7908ffe3c"
+                            }
+                        }
+                    ],
+                    "ClientToken": "terraform-20260110150923888400000005",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::264799070891:instance-profile/armageddon-lab1-ec2-instance-profile",
+                        "Id": "AIPAT3J2BFKV3PAL7YI2C"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-54-227-46-171.compute-1.amazonaws.com",
+                                "PublicIp": "54.227.46.171"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2026-01-10T15:09:24+00:00",
+                                "AttachmentId": "eni-attach-007f5e99db4ddee32",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-0d328639af036533f",
+                                    "GroupName": "armageddon-lab1-web-sg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:ff:fc:bc:61:c9",
+                            "NetworkInterfaceId": "eni-0d50af5174336d5eb",
+                            "OwnerId": "264799070891",
+                            "PrivateDnsName": "ip-10-32-1-210.ec2.internal",
+                            "PrivateIpAddress": "10.32.1.210",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-54-227-46-171.compute-1.amazonaws.com",
+                                        "PublicIp": "54.227.46.171"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-1-210.ec2.internal",
+                                    "PrivateIpAddress": "10.32.1.210"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-08ade75bcaadd1e80",
+                            "VpcId": "vpc-0a758fdfa5435b1b9",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-0d328639af036533f",
+                            "GroupName": "armageddon-lab1-web-sg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Owner",
+                            "Value": "dc"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "armageddon-lab1-web-sg"
+                        },
+                        {
+                            "Key": "Environment",
+                            "Value": "Armageddon-Lab1"
+                        },
+                        {
+                            "Key": "ManagedBy",
+                            "Value": "Terraform"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "BootMode": "uefi-preferred",
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2026-01-10T15:09:25+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false
+                    },
+                    "InstanceId": "i-0557165f19e21b25f",
+                    "ImageId": "ami-08982f1c5bf93d976",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "PrivateDnsName": "ip-10-32-1-210.ec2.internal",
+                    "PublicDnsName": "ec2-54-227-46-171.compute-1.amazonaws.com",
+                    "StateTransitionReason": "",
+                    "KeyName": "BMC7-General",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t2.micro",
+                    "LaunchTime": "2026-01-10T15:39:25+00:00",
+                    "Placement": {
+                        "AvailabilityZoneId": "use1-az4",
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "us-east-1a"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-08ade75bcaadd1e80",
+                    "VpcId": "vpc-0a758fdfa5435b1b9",
+                    "PrivateIpAddress": "10.32.1.210",
+                    "PublicIpAddress": "54.227.46.171"
+                }
+            ]
+        }
+    ]
+}

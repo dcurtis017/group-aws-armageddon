@@ -1,0 +1,50 @@
+[
+    {
+        "DestinationCidrBlock": "10.133.0.0/16",
+        "GatewayId": "local",
+        "Origin": "CreateRouteTable",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": "igw-0d683bca55ccad379",
+        "Origin": "CreateRoute",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.32.0.0/16",
+        "TransitGatewayId": "tgw-05cec35469ca083c8",
+        "Origin": "CreateRoute",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.133.0.0/16",
+        "GatewayId": "local",
+        "Origin": "CreateRouteTable",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": "nat-0d20651c9ba10d174",
+        "Origin": "CreateRoute",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.133.0.0/16",
+        "GatewayId": "local",
+        "Origin": "CreateRouteTable",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.32.0.0/16",
+        "TransitGatewayId": "tgw-05cec35469ca083c8",
+        "Origin": "CreateRoute",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.133.0.0/16",
+        "GatewayId": "local",
+        "Origin": "CreateRouteTable",
+        "State": "active"
+    }
+]
