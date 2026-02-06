@@ -1,8 +1,9 @@
 # 3A
 
-|Site|Region|CIDR|
-|Tokyo|ap-northeast-1|10.32.0.0/16|
-|Sao Paulo|sa-east-1|10.133.0.0/16|
+| Site      | Region         | CIDR          |
+| --------- | -------------- | ------------- |
+| Tokyo     | ap-northeast-1 | 10.32.0.0/16  |
+| Sao Paulo | sa-east-1      | 10.133.0.0/16 |
 
 ## Test reachability from SP to Tokyo RDS instance
 
