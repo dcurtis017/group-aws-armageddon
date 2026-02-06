@@ -248,6 +248,7 @@ After=network.target
 WorkingDirectory=/opt/rdsapp
 Environment=SECRET_ID=${db_secret_name}
 Environment=PUBLISH_CUSTOM_METRIC=${publish_custom_metric}
+Environment=AWS_REGION=${aws_region}
 ExecStart=/usr/bin/python3 /opt/rdsapp/app.py
 Restart=always
 

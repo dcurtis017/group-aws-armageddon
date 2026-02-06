@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    }
+  }
+}
+
 data "aws_caller_identity" "current" {}
 
 data "aws_ec2_managed_prefix_list" "cloudfront_prefixes" {
@@ -115,6 +123,7 @@ resource "aws_instance" "web_instance" {
     db_secret_name        = var.db_secret_name,
     log_group             = aws_cloudwatch_log_group.lab_1_ec2_log_group.name
     publish_custom_metric = var.publish_custom_metric
+    aws_region            = var.region
   })
 
   tags = {

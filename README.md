@@ -106,9 +106,29 @@ terraform destroy --auto-approve
 
 ## Deliverables
 
+# Lab 3
+
+## To Do
+
+- [] Create Auth
+- [] Create Japanese Resources -- Test
+- [] Create provider so we can make sure ACM cert is in us-east-1
+- [] Add Brazil resources
+- [] Make sure instances are in private subnets
+- [] Cloudfront part
+- [] Transit gateways
+- [] Make sure Brazil can connect to db in Tokyo
+- [] Check NACL subnet association
+
+\*\*Will routes auto-propogate if I don't put them in the route table
+
 # Modules
 
 When you change a module, make sure to run `terraform init -upgrade` so your project will get the latest version of the module.
+
+## To Do
+
+- [] Remove enabled_alb_tls since it's not used
 
 ## Module Overview
 

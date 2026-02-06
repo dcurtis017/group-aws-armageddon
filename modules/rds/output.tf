@@ -13,3 +13,7 @@ output "db_secret_name" {
 output "rds_instance_id" {
   value = aws_db_instance.rds_instance.id
 }
+
+output "db_secret_id" {
+  value = aws_secretsmanager_secret.lab_1_db_secret.id
+}

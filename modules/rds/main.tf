@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    }
+  }
+}
+
 locals {
   db_secret_name = "${var.ssm_and_secret_prefix}/rds/mysql"
 }

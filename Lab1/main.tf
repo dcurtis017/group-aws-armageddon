@@ -146,6 +146,7 @@ module "web_app" {
   secret_header_name      = local.secret_header_name
   certificate_arn         = module.acm.certificate_arn
   instance_subnet         = module.vpc.private_subnet_ids[0]
+  secret_header_value     = random_string.bucket_suffix.result
 }
 
 # alias so alb can use root domain
