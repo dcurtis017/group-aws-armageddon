@@ -70,6 +70,38 @@ resource "aws_s3_bucket_policy" "logs_bucket_policy" {
         }
         Action   = "s3:PutObject"
         Resource = ["${aws_s3_bucket.logs_bucket.arn}/${var.alb_log_prefix}/AWSLogs/${data.aws_caller_identity.current.account_id}/*"]
+      },
+      {
+        Sid    = "AllowVPCFlowLogs"
+        Effect = "Allow"
+        Principal = {
+          Service = "logdelivery.elasticloadbalancing.amazonaws.com" # this is case sensitive for the word 'Service'
+        }
+        Action   = ["s3:PutObject", "s3:ListBucket", "s3:GetBucketAcl", "s3:PutBucketAcl"]
+        Resource = ["${aws_s3_bucket.logs_bucket.arn}", "${aws_s3_bucket.logs_bucket.arn}/*"]
+      },
+      {
+        Sid    = "AllowCloudTrailAclCheck"
+        Effect = "Allow"
+        Principal = {
+          Service = "cloudtrail.amazonaws.com"
+        }
+        Action   = "s3:GetBucketAcl"
+        Resource = ["${aws_s3_bucket.logs_bucket.arn}"]
+      },
+      {
+        Sid    = "AllowCloudTrailWrite"
+        Effect = "Allow"
+        Principal = {
+          Service = "cloudtrail.amazonaws.com"
+        }
+        Action   = ["s3:PutObject"]
+        Resource = ["${aws_s3_bucket.logs_bucket.arn}/AWSLogs/${data.aws_caller_identity.current.account_id}/*"]
+        Condition = {
+          "StringEquals" = {
+            "s3:x-amz-acl" = "bucket-owner-full-control"
+          }
+        }
       }
     ]
   })

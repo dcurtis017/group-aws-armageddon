@@ -1,0 +1,168 @@
+> aws ec2 describe-transit-gateways --region sa-east-1 --no-cl
+i-pager
+{
+    "TransitGateways": [
+        {
+            "TransitGatewayId": "tgw-038c5f24d556cbdb9",
+            "TransitGatewayArn": "arn:aws:ec2:sa-east-1:--redacted--:transit-gateway/tgw-038c5f24d556cbdb9",
+            "State": "available",
+            "OwnerId": "--redacted--",
+            "Description": "Sao Paulo TGW (Spoke)",
+            "CreationTime": "2026-02-09T22:51:26+00:00",
+            "Options": {
+                "AmazonSideAsn": 64512,
+                "AutoAcceptSharedAttachments": "disable",
+                "DefaultRouteTableAssociation": "enable",
+                "AssociationDefaultRouteTableId": "tgw-rtb-0597c5b75d046ee15",
+                "DefaultRouteTablePropagation": "enable",
+                "PropagationDefaultRouteTableId": "tgw-rtb-0597c5b75d046ee15",
+                "VpnEcmpSupport": "enable",
+                "DnsSupport": "enable",
+                "SecurityGroupReferencingSupport": "disable",
+                "MulticastSupport": "disable"
+            },
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "Armageddon-Lab3"
+                },
+                {
+                    "Key": "Owner",
+                    "Value": "dc"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Terraform"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "saopaulo-tgw"
+                },
+                {
+                    "Key": "Resource_Tag",
+                    "Value": "Brazil/SaoPaulo"
+                }
+            ]
+        }
+    ]
+}
+
+> aws ec2 describe-transit-gateways --region ap-northeast-1 --no-cli-pager
+{
+    "TransitGateways": [
+        {
+            "TransitGatewayId": "tgw-01b9dd883800a8a7a",
+            "TransitGatewayArn": "arn:aws:ec2:ap-northeast-1:--redacted--:transit-gateway/tgw-01b9dd883800a8a7a",
+            "State": "available",
+            "OwnerId": "--redacted--",
+            "Description": "Tokyo TGW (Hub)",
+            "CreationTime": "2026-02-09T22:51:27+00:00",
+            "Options": {
+                "AmazonSideAsn": 64512,
+                "AutoAcceptSharedAttachments": "disable",
+                "DefaultRouteTableAssociation": "enable",
+                "AssociationDefaultRouteTableId": "tgw-rtb-0ef7dabef3e305481",
+                "DefaultRouteTablePropagation": "enable",
+                "PropagationDefaultRouteTableId": "tgw-rtb-0ef7dabef3e305481",
+                "VpnEcmpSupport": "enable",
+                "DnsSupport": "enable",
+                "SecurityGroupReferencingSupport": "disable",
+                "MulticastSupport": "disable"
+            },
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "Armageddon-Lab3"
+                },
+                {
+                    "Key": "Owner",
+                    "Value": "dc"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Terraform"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "tokyo-tgw"
+                },
+                {
+                    "Key": "Resource_Tag",
+                    "Value": "Japan/Tokyo"
+                }
+            ]
+        }
+    ]
+}
+
+
+> aws ec2 describe-transit-gateway-route-tables --region ap-nor
+theast-1 --no-cli-pager
+{
+    "TransitGatewayRouteTables": [
+        {
+            "TransitGatewayRouteTableId": "tgw-rtb-0ef7dabef3e305481",
+            "TransitGatewayId": "tgw-01b9dd883800a8a7a",
+            "State": "available",
+            "DefaultAssociationRouteTable": true,
+            "DefaultPropagationRouteTable": true,
+            "CreationTime": "2026-02-09T22:51:38+00:00",
+            "Tags": []
+        }
+    ]
+}
+
+> aws ec2 search-transit-gateway-routes --region ap-northeast-1 --transit-gateway-route-table-id tgw-rtb-0ef7dabef3e305481 --no-cli-pager --filters "Name=type,Values=static"
+{
+    "Routes": [
+        {
+            "DestinationCidrBlock": "10.133.0.0/16",
+            "TransitGatewayRouteTableAnnouncementId": "",
+            "TransitGatewayAttachments": [
+                {
+                    "ResourceId": "tgw-038c5f24d556cbdb9",
+                    "TransitGatewayAttachmentId": "tgw-attach-0dff09e91fb206904",
+                    "ResourceType": "peering"
+                }
+            ],
+            "Type": "static",
+            "State": "active"
+        }
+    ],
+    "AdditionalRoutesAvailable": false
+}
+
+> aws ec2 describe-transit-gateway-route-tables --region sa-east-1 --no-cli-pager
+{
+    "TransitGatewayRouteTables": [
+        {
+            "TransitGatewayRouteTableId": "tgw-rtb-0597c5b75d046ee15",
+            "TransitGatewayId": "tgw-038c5f24d556cbdb9",
+            "State": "available",
+            "DefaultAssociationRouteTable": true,
+            "DefaultPropagationRouteTable": true,
+            "CreationTime": "2026-02-09T22:51:56+00:00",
+            "Tags": []
+        }
+    ]
+}
+
+> aws ec2 search-transit-gateway-routes --region sa-east-1 --transit-gateway-route-table-id tgw-rtb-0597c5b75d046ee15 --no-cli-pager --filters "Name=type,Values=static"
+{
+    "Routes": [
+        {
+            "DestinationCidrBlock": "10.32.0.0/16",
+            "TransitGatewayRouteTableAnnouncementId": "",
+            "TransitGatewayAttachments": [
+                {
+                    "ResourceId": "tgw-01b9dd883800a8a7a",
+                    "TransitGatewayAttachmentId": "tgw-attach-0dff09e91fb206904",
+                    "ResourceType": "peering"
+                }
+            ],
+            "Type": "static",
+            "State": "active"
+        }
+    ],
+    "AdditionalRoutesAvailable": false
+}

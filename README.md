@@ -59,7 +59,14 @@ enable_waf_logging     = true
 # General Todos
 
 - [] - Use a variable for the secret header value
-- [] - Add appropriate outputs for labs
+- [] - Add appropriate outputs for labs# Issues/General Todo
+- [] Lab 3 I have to run the apply twice becaue of Error: creating EC2 Transit Gateway Route -- need to resolve this. I think it's a race condition
+- [] `restrict_alb_to_cloudfront` does not result in allow https from anywhere to work
+  - the broad rule was required for lab3b to work -- need to understand why
+- [] Lab 3 does not work with custom header
+- [] Move Cloudfront logs to S3 instead of cloudwatch?
+- [] CloudFront and WAF Cloudwatch logs empty
+- [] Lab2 refresh hit
 
 # Running Labs
 
@@ -108,19 +115,27 @@ terraform destroy --auto-approve
 
 # Lab 3
 
+https://aws.amazon.com/blogs/networking-and-content-delivery/latency-based-routing-leveraging-amazon-cloudfront-for-a-multi-region-active-active-architecture/
+
+https://mahira-technology.medium.com/streamlining-network-visibility-a-comprehensive-guide-to-creating-vpc-flow-logs-with-terraform-6622b6f7a32b
+
+https://aws.plainenglish.io/project-trail-using-terraform-to-deploy-aws-cloudtrail-8f60d4a48a0a
+
 ## To Do
 
-- [] Create Auth
-- [] Create Japanese Resources -- Test
-- [] Create provider so we can make sure ACM cert is in us-east-1
-- [] Add Brazil resources
-- [] Make sure instances are in private subnets
-- [] Cloudfront part
-- [] Transit gateways
-- [] Make sure Brazil can connect to db in Tokyo
-- [] Check NACL subnet association
-
-\*\*Will routes auto-propogate if I don't put them in the route table
+- [x] Create Auth
+- [x] Create Japanese Resources -- Test
+- [x] Create provider so we can make sure ACM cert is in us-east-1
+- [x] Add Brazil resources
+- [x] Make sure instances are in private subnets
+- [x] Cloudfront part
+- [x] Transit gateways
+- [x] Make sure Brazil can connect to db in Tokyo
+- [x] Check NACL subnet association
+- [] VPC flow logs
+- [] CloudTrail
+  \*\*Will routes auto-propogate if I don't put them in the route table
+  \*\* leave restricted to cf turn off custom header
 
 # Modules
 

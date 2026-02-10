@@ -112,3 +112,20 @@ resource "aws_route_table_association" "private_rt_associations" {
   subnet_id      = aws_subnet.private_subnets[count.index].id
   route_table_id = aws_route_table.private_route_table.id
 }
+
+resource "aws_flow_log" "flow_logs" {
+  count                = var.use_vpc_flow_logs != null ? 1 : 0
+  log_destination      = var.vpc_flow_logs_bucket
+  log_destination_type = "s3"
+  traffic_type         = "ALL"
+  vpc_id               = aws_vpc.vpc.id
+}
+
+resource "aws_cloudtrail" "cloudtrail_logs" {
+  count                         = var.use_cloudtrail_logs != null ? 1 : 0
+  name                          = "${var.name_prefix}-cloudtrail"
+  s3_bucket_name                = var.cloudtrail_logs_bucket
+  include_global_service_events = true
+  is_multi_region_trail         = true
+
+}

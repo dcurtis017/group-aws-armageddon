@@ -64,6 +64,7 @@ resource "aws_cloudwatch_log_group" "waf_log_group01" {
   tags = {
     Name = "${var.name_prefix}-waf-log-group01"
   }
+  region = "us-east-1"
 }
 
 
@@ -79,6 +80,7 @@ resource "aws_wafv2_web_acl_logging_configuration" "waf_logging01" {
   # redacted_fields { ... }
 
   depends_on = [aws_wafv2_web_acl.waf_acl]
+  region     = "us-east-1"
 }
 
 # TODO: add s3 and kinesis firehose as logging destinations -- it's possible that maybe you can just add to the waf_logging01 log_destination_configs array. Maybe make the array in locals based on variables and using list concatenation??

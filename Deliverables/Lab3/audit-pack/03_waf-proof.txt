@@ -1,0 +1,22 @@
+{
+  "actions": [
+    {
+      "action": "ALLOW",
+      "hits": "3"
+    }
+  ],
+  "top_ips": [
+    {
+      "httpRequest.clientIp": "--reacted--",
+      "hits": "1"
+    },
+    {
+      "httpRequest.clientIp": "--reacted--",
+      "hits": "1"
+    },
+    {
+      "httpRequest.clientIp": "--reacted--",
+      "hits": "1"
+    }
+  ]
+}

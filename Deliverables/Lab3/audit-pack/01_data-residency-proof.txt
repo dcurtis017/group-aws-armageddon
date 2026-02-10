@@ -1,0 +1,14 @@
+> aws rds describe-db-instances --region ap-northeast-1 --query "DBInstances[].{DB:DBInstanceIdentifier,AZ:AvailabilityZone,Region:'ap-northeast-1',Endpong:Endpoing.Address}" --no-cli-pager
+[
+    {
+        "DB": "tokyo-rds-instance",
+        "AZ": "ap-northeast-1c",
+        "Region": "ap-northeast-1",
+        "Endpong": null
+    }
+]
+
+> aws rds describe-db-instances --region sa-east-1 --query "DB
+Instances[].DBInstanceIdentifier" --no-cli-pager
+[]
+

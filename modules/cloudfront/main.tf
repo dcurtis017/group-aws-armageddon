@@ -251,10 +251,7 @@ resource "aws_cloudfront_distribution" "lab_cf" {
   }
 
   web_acl_id = var.waf_arn
-  aliases = [
-    var.root_domain_name,
-    "${var.app_subdomain}.${var.root_domain_name}"
-  ]
+  aliases    = var.aliases
   viewer_certificate {
     acm_certificate_arn      = var.acm_certificate_arn
     ssl_support_method       = "sni-only"
@@ -269,15 +266,18 @@ resource "aws_cloudfront_distribution" "lab_cf" {
 }
 
 # https://medium.com/versent-tech-blog/new-cloudfront-log-destinations-b19d2cecae63
+# cloudwatch logs for cloudfront must be in us-east-1
 resource "aws_cloudwatch_log_group" "cf_log_group" {
   name              = var.log_group_name
   retention_in_days = 30
+  region            = "us-east-1"
 }
 
 resource "aws_cloudwatch_log_delivery_source" "cf_log_delivery_source" {
   name         = "cloudfront-logs-source"
   resource_arn = aws_cloudfront_distribution.lab_cf.arn
   log_type     = "ACCESS_LOGS"
+  region       = "us-east-1"
 }
 
 resource "aws_cloudwatch_log_delivery_destination" "cloudfront_logs_delivery_destination" {
@@ -286,9 +286,11 @@ resource "aws_cloudwatch_log_delivery_destination" "cloudfront_logs_delivery_des
   delivery_destination_configuration {
     destination_resource_arn = aws_cloudwatch_log_group.cf_log_group.arn
   }
+  region = "us-east-1"
 }
 
 resource "aws_cloudwatch_log_delivery" "cloudfront_logs_delivery" {
   delivery_source_name     = aws_cloudwatch_log_delivery_source.cf_log_delivery_source.name
   delivery_destination_arn = aws_cloudwatch_log_delivery_destination.cloudfront_logs_delivery_destination.arn
+  region                   = "us-east-1"
 }

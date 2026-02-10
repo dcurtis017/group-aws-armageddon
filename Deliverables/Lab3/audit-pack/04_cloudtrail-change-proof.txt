@@ -1,0 +1,17 @@
+> aws cloudtrail list-trails --no-cli-pager
+{
+    "Trails": [
+        {
+            "TrailARN": "arn:aws:cloudtrail:sa-east-1:--redacted--:trail/saopaulo-cloudtrail",
+            "Name": "saopaulo-cloudtrail",
+            "HomeRegion": "sa-east-1"
+        },
+        {
+            "TrailARN": "arn:aws:cloudtrail:ap-northeast-1:--redacted--:trail/tokyo-cloudtrail",
+            "Name": "tokyo-cloudtrail",
+            "HomeRegion": "ap-northeast-1"
+        }
+    ]
+}
+
+**I ran malgus_cloudtrail_last_change.py and see my changes for tokyo and sao paulo

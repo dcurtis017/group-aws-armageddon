@@ -73,6 +73,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 from datetime import datetime, timezone
 import uuid
+import socket
 
 # logging
 handler = RotatingFileHandler('/var/log/rdsapp.log', maxBytes=10000, backupCount=3)
@@ -157,6 +158,16 @@ def home():
     <p>POST /add?note=hello</p>
     <p>GET /list</p>
     """
+
+@app.route("/api/instance-info")
+def instance_info():
+    info = {
+        "region": REGION,
+        "hostname": socket.gethostname()
+    }
+    response = make_response(json.dumps(info, default=str))
+    response.headers["Cache-Control"] = "public, s-maxage=30, max-age=0"
+    return response
 
 @app.route("/api/init")
 def init_db():

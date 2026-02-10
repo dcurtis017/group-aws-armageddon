@@ -160,11 +160,13 @@ module "cf" {
   name_prefix         = var.name_prefix
   secret_header_name  = local.secret_header_name
   secret_header_value = random_string.bucket_suffix.result
-  root_domain_name    = var.root_domain_name
-  app_subdomain       = local.app_subdomain
   acm_certificate_arn = module.acm.certificate_arn
   origin_dns_name     = module.web_app.alb_dns_name
   waf_arn             = module.waf.waf_acl_arn
+  aliases = [
+    var.root_domain_name,
+    "${local.app_subdomain}.${var.root_domain_name}"
+  ]
 }
 
 # aliases for CF to use domain

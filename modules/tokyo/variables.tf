@@ -106,3 +106,18 @@ variable "tgw_peer_account_id" {
 variable "tgw_peer_cidr" {
   type = string
 }
+
+variable "restrict_alb_access_with_header" {
+  type    = bool
+  default = false
+}
+
+variable "restrict_alb_to_cloudfront" {
+  type    = bool
+  default = false
+}
+
+variable "enable_alb_access_logs" {
+  type    = bool
+  default = false
+}

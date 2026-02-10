@@ -10,14 +10,6 @@ variable "secret_header_value" {
   type = string
 }
 
-variable "root_domain_name" {
-  type = string
-}
-
-variable "app_subdomain" {
-  type = string
-}
-
 variable "acm_certificate_arn" {
   type = string
 }
@@ -34,4 +26,10 @@ variable "waf_arn" {
 variable "log_group_name" {
   type    = string
   default = "/aws/cloudfront/lab-distribution-logs"
+}
+
+variable "aliases" {
+  type        = list(string)
+  default     = []
+  description = "DNS aliases for distribution"
 }

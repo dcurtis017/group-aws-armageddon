@@ -39,3 +39,22 @@ variable "availability_zones" {
   type        = list(string)
   default     = ["us-east-1a", "us-east-1b"]
 }
+
+variable "vpc_flow_logs_bucket" {
+  type    = string
+  default = null
+}
+
+variable "use_vpc_flow_logs" {
+  type    = bool
+  default = false
+}
+variable "cloudtrail_logs_bucket" {
+  type    = string
+  default = null
+}
+
+variable "use_cloudtrail_logs" {
+  type    = bool
+  default = false
+}

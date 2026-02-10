@@ -39,13 +39,17 @@ module "vpc" {
   providers = {
     aws = aws
   }
-  name_prefix         = var.name_prefix
-  region              = var.region
-  vpc_cidr            = var.vpc_cidr
-  public_subnets      = var.public_subnets
-  private_subnets     = var.private_subnets
-  availability_zones  = var.availability_zones
-  include_nat_gateway = var.include_nat_gateway
+  name_prefix            = var.name_prefix
+  region                 = var.region
+  vpc_cidr               = var.vpc_cidr
+  public_subnets         = var.public_subnets
+  private_subnets        = var.private_subnets
+  availability_zones     = var.availability_zones
+  include_nat_gateway    = var.include_nat_gateway
+  vpc_flow_logs_bucket   = module.s3.s3_bucket_arn
+  cloudtrail_logs_bucket = module.s3.s3_bucket_id
+
+  depends_on = [module.s3]
 }
 
 # Web Service
@@ -62,7 +66,7 @@ module "web_service" {
   ami_id                          = var.ami_id
   instance_type                   = var.instance_type
   publish_custom_metric           = false
-  enable_alb_access_logs          = false
+  enable_alb_access_logs          = var.enable_alb_access_logs
   alb_log_prefix                  = local.alb_log_prefix
   enabled_alb_tls                 = false
   vpc_endpoint_services           = var.vpc_endpoint_services
@@ -71,9 +75,9 @@ module "web_service" {
   secret_header_name              = var.secret_header_name
   secret_header_value             = var.secret_header_value
   instance_subnet                 = module.vpc.private_subnet_ids[0]
-  restrict_alb_access_with_header = false
+  restrict_alb_access_with_header = var.restrict_alb_access_with_header
   vpc_endpoint_subnet_ids         = []
-  restrict_alb_to_cloudfront      = false
+  restrict_alb_to_cloudfront      = var.restrict_alb_to_cloudfront
   certificate_arn                 = module.acm.certificate_arn
 }
 
@@ -82,6 +86,22 @@ resource "aws_route53_record" "alb_app_alias" {
   name    = "saopaulo"
   type    = "A"
 
+  alias {
+    name                   = module.web_service.alb_dns_name
+    zone_id                = module.web_service.alb_zone_id
+    evaluate_target_health = true
+  }
+}
+
+
+resource "aws_route53_record" "tokyo_latency_record" {
+  zone_id        = module.acm.primary_domain_zone_id
+  name           = ""
+  type           = "A"
+  set_identifier = "saopaulo"
+  latency_routing_policy {
+    region = var.region
+  }
   alias {
     name                   = module.web_service.alb_dns_name
     zone_id                = module.web_service.alb_zone_id

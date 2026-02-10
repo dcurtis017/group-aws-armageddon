@@ -1,0 +1,1684 @@
+{
+  "tokyo": [
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:21:08-05:00",
+      "event": "DescribeTransitGatewayAttachments",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:21:07-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:20:32-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:20:06-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:19:26-05:00",
+      "event": "LookupEvents",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:18:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:16:18-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:16:18-05:00",
+      "event": "ListDashboards",
+      "user": "resource-explorer-2",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:16:03-05:00",
+      "event": "SearchTransitGatewayRoutes",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:15:52-05:00",
+      "event": "SearchTransitGatewayRoutes",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:14:12-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:13:38-05:00",
+      "event": "DescribeTransitGatewayRouteTables",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:13:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:12:07-05:00",
+      "event": "GetBucketAcl",
+      "user": null,
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:11:56-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:09:43-05:00",
+      "event": "GetBucketAcl",
+      "user": null,
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:09:17-05:00",
+      "event": "ListEventIntegrations",
+      "user": "resource-explorer-2",
+      "source": "app-integrations.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:09:17-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:08:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:05:06-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:56-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:29-05:00",
+      "event": "DescribeSnapshots",
+      "user": "resource-explorer-2",
+      "source": "elasticache.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:29-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:19-05:00",
+      "event": "ListResources",
+      "user": "resource-explorer-2",
+      "source": "cloudcontrolapi.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:19-05:00",
+      "event": "ListGuardrails",
+      "user": "resource-explorer-2",
+      "source": "bedrock.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:19-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:00-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:03:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:58:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:57:55-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:54:08-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:53:47-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:53:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:52:00-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:52:00-05:00",
+      "event": "ListConnections",
+      "user": "resource-explorer-2",
+      "source": "codestar-connections.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:50:43-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:50:43-05:00",
+      "event": "ListInstances",
+      "user": "resource-explorer-2",
+      "source": "connect.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:49:21-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:49:21-05:00",
+      "event": "ListAssistants",
+      "user": "resource-explorer-2",
+      "source": "qconnect.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:48:27-05:00",
+      "event": "ListStorageConfigurations",
+      "user": "resource-explorer-2",
+      "source": "ivs.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:48:27-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:48:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:44:06-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:43:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:42:35-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:42:35-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:39:40-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:39:40-05:00",
+      "event": "ListComponents",
+      "user": "resource-explorer-2",
+      "source": "greengrass.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:38:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:34:03-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    }
+  ],
+  "saopaulo": [
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:21:08-05:00",
+      "event": "DescribeTransitGatewayAttachments",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:21:08-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:20:33-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:19:27-05:00",
+      "event": "LookupEvents",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:19:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:16:40-05:00",
+      "event": "SearchTransitGatewayRoutes",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:14:28-05:00",
+      "event": "DescribeVerifiedAccessEndpoints",
+      "user": "resource-explorer-2",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:14:28-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:14:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:14:09-05:00",
+      "event": "DescribeTransitGatewayRouteTables",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:13:55-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:12:07-05:00",
+      "event": "GetBucketAcl",
+      "user": null,
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:10:31-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:10:20-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:09:43-05:00",
+      "event": "GetBucketAcl",
+      "user": null,
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:09:18-05:00",
+      "event": "GetTrail",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:09:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:06:57-05:00",
+      "event": "ListTrails",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:06:02-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:04:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:03:50-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:03:50-05:00",
+      "event": "DescribeIpamResourceDiscoveryAssociations",
+      "user": "resource-explorer-2",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:03:43-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:59:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:54:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:53:44-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:53:32-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:52:18-05:00",
+      "event": "GetDatabases",
+      "user": "resource-explorer-2",
+      "source": "glue.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:52:18-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:51:37-05:00",
+      "event": "DescribeVpcs",
+      "user": "ElasticLoadBalancing",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:51:36-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:49:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:44:38-05:00",
+      "event": "ListArchives",
+      "user": "resource-explorer-2",
+      "source": "events.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:44:38-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:44:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:44:00-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:42:27-05:00",
+      "event": "DescribeCacheParameterGroups",
+      "user": "resource-explorer-2",
+      "source": "elasticache.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:42:27-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:39:20-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:39:20-05:00",
+      "event": "DescribeSnapshots",
+      "user": "resource-explorer-2",
+      "source": "memorydb.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:39:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:38:23-05:00",
+      "event": "ListStorageLensConfigurations",
+      "user": "resource-explorer-2",
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:38:23-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:35:27-05:00",
+      "event": "ListMeshes",
+      "user": "resource-explorer-2",
+      "source": "appmesh.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:35:27-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:34:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:33:49-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:29:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:28:50-05:00",
+      "event": "DescribeClusterParameterGroups",
+      "user": "resource-explorer-2",
+      "source": "redshift.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:28:50-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    }
+  ]
+}
+{
+  "tokyo": {
+    "region": "ap-northeast-1",
+    "transit_gateways": [
+      {
+        "TransitGatewayId": "tgw-01b9dd883800a8a7a",
+        "TransitGatewayArn": "arn:aws:ec2:ap-northeast-1:--redacted--:transit-gateway/tgw-01b9dd883800a8a7a",
+        "State": "available",
+        "OwnerId": "--redacted--",
+        "Description": "Tokyo TGW (Hub)",
+        "CreationTime": "2026-02-09 22:51:27+00:00",
+        "Options": {
+          "AmazonSideAsn": 64512,
+          "AutoAcceptSharedAttachments": "disable",
+          "DefaultRouteTableAssociation": "enable",
+          "AssociationDefaultRouteTableId": "tgw-rtb-0ef7dabef3e305481",
+          "DefaultRouteTablePropagation": "enable",
+          "PropagationDefaultRouteTableId": "tgw-rtb-0ef7dabef3e305481",
+          "VpnEcmpSupport": "enable",
+          "DnsSupport": "enable",
+          "SecurityGroupReferencingSupport": "disable",
+          "MulticastSupport": "disable",
+          "EncryptionSupport": {
+            "EncryptionState": "disabled"
+          }
+        },
+        "Tags": [
+          {
+            "Key": "Environment",
+            "Value": "Armageddon-Lab3"
+          },
+          {
+            "Key": "Owner",
+            "Value": "dc"
+          },
+          {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+          },
+          {
+            "Key": "Name",
+            "Value": "tokyo-tgw"
+          },
+          {
+            "Key": "Resource_Tag",
+            "Value": "Japan/Tokyo"
+          }
+        ]
+      }
+    ],
+    "attachments": [
+      {
+        "TransitGatewayAttachmentId": "tgw-attach-0dff09e91fb206904",
+        "TransitGatewayId": "tgw-01b9dd883800a8a7a",
+        "TransitGatewayOwnerId": "--redacted--",
+        "ResourceOwnerId": "--redacted--",
+        "ResourceType": "peering",
+        "ResourceId": "tgw-038c5f24d556cbdb9",
+        "State": "available",
+        "Association": {
+          "TransitGatewayRouteTableId": "tgw-rtb-0ef7dabef3e305481",
+          "State": "associated"
+        },
+        "CreationTime": "2026-02-09 22:53:01+00:00",
+        "Tags": [
+          {
+            "Key": "Environment",
+            "Value": "Armageddon-Lab3"
+          },
+          {
+            "Key": "Owner",
+            "Value": "dc"
+          },
+          {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+          },
+          {
+            "Key": "Name",
+            "Value": "tokyo-to-sa-east-1-peering-attachment"
+          },
+          {
+            "Key": "Resource_Tag",
+            "Value": "Japan/Tokyo"
+          }
+        ]
+      },
+      {
+        "TransitGatewayAttachmentId": "tgw-attach-0c9ba7a3dc3d49de7",
+        "TransitGatewayId": "tgw-01b9dd883800a8a7a",
+        "TransitGatewayOwnerId": "--redacted--",
+        "ResourceOwnerId": "--redacted--",
+        "ResourceType": "vpc",
+        "ResourceId": "vpc-099ac8dd08a456fb3",
+        "State": "available",
+        "Association": {
+          "TransitGatewayRouteTableId": "tgw-rtb-0ef7dabef3e305481",
+          "State": "associated"
+        },
+        "CreationTime": "2026-02-09 22:52:13+00:00",
+        "Tags": [
+          {
+            "Key": "Environment",
+            "Value": "Armageddon-Lab3"
+          },
+          {
+            "Key": "Owner",
+            "Value": "dc"
+          },
+          {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+          },
+          {
+            "Key": "Name",
+            "Value": "tokyo-tgw-vpc-attachment"
+          },
+          {
+            "Key": "Resource_Tag",
+            "Value": "Japan/Tokyo"
+          }
+        ]
+      }
+    ]
+  },
+  "saopaulo": {
+    "region": "sa-east-1",
+    "transit_gateways": [
+      {
+        "TransitGatewayId": "tgw-038c5f24d556cbdb9",
+        "TransitGatewayArn": "arn:aws:ec2:sa-east-1:--redacted--:transit-gateway/tgw-038c5f24d556cbdb9",
+        "State": "available",
+        "OwnerId": "--redacted--",
+        "Description": "Sao Paulo TGW (Spoke)",
+        "CreationTime": "2026-02-09 22:51:26+00:00",
+        "Options": {
+          "AmazonSideAsn": 64512,
+          "AutoAcceptSharedAttachments": "disable",
+          "DefaultRouteTableAssociation": "enable",
+          "AssociationDefaultRouteTableId": "tgw-rtb-0597c5b75d046ee15",
+          "DefaultRouteTablePropagation": "enable",
+          "PropagationDefaultRouteTableId": "tgw-rtb-0597c5b75d046ee15",
+          "VpnEcmpSupport": "enable",
+          "DnsSupport": "enable",
+          "SecurityGroupReferencingSupport": "disable",
+          "MulticastSupport": "disable",
+          "EncryptionSupport": {
+            "EncryptionState": "disabled"
+          }
+        },
+        "Tags": [
+          {
+            "Key": "Environment",
+            "Value": "Armageddon-Lab3"
+          },
+          {
+            "Key": "Owner",
+            "Value": "dc"
+          },
+          {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+          },
+          {
+            "Key": "Name",
+            "Value": "saopaulo-tgw"
+          },
+          {
+            "Key": "Resource_Tag",
+            "Value": "Brazil/SaoPaulo"
+          }
+        ]
+      }
+    ],
+    "attachments": [
+      {
+        "TransitGatewayAttachmentId": "tgw-attach-0dff09e91fb206904",
+        "TransitGatewayId": "tgw-038c5f24d556cbdb9",
+        "TransitGatewayOwnerId": "--redacted--",
+        "ResourceOwnerId": "--redacted--",
+        "ResourceType": "peering",
+        "ResourceId": "tgw-01b9dd883800a8a7a",
+        "State": "available",
+        "Association": {
+          "TransitGatewayRouteTableId": "tgw-rtb-0597c5b75d046ee15",
+          "State": "associated"
+        },
+        "CreationTime": "2026-02-09 22:53:19+00:00",
+        "Tags": [
+          {
+            "Key": "Environment",
+            "Value": "Armageddon-Lab3"
+          },
+          {
+            "Key": "Owner",
+            "Value": "dc"
+          },
+          {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+          },
+          {
+            "Key": "Name",
+            "Value": "saopaulo-tgw-peering-attachment-accepter"
+          },
+          {
+            "Key": "Resource_Tag",
+            "Value": "Brazil/SaoPaulo"
+          }
+        ]
+      },
+      {
+        "TransitGatewayAttachmentId": "tgw-attach-0d42ff0ab6d4a2bd1",
+        "TransitGatewayId": "tgw-038c5f24d556cbdb9",
+        "TransitGatewayOwnerId": "--redacted--",
+        "ResourceOwnerId": "--redacted--",
+        "ResourceType": "vpc",
+        "ResourceId": "vpc-0b9fb3f30dabaa6b8",
+        "State": "available",
+        "Association": {
+          "TransitGatewayRouteTableId": "tgw-rtb-0597c5b75d046ee15",
+          "State": "associated"
+        },
+        "CreationTime": "2026-02-09 22:52:43+00:00",
+        "Tags": [
+          {
+            "Key": "Environment",
+            "Value": "Armageddon-Lab3"
+          },
+          {
+            "Key": "Owner",
+            "Value": "dc"
+          },
+          {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+          },
+          {
+            "Key": "Name",
+            "Value": "saopaulo-tgw-vpc-attachment"
+          },
+          {
+            "Key": "Resource_Tag",
+            "Value": "Brazil/SaoPaulo"
+          }
+        ]
+      }
+    ]
+  }
+}
+{
+  "tokyo": [
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:24:15-05:00",
+      "event": "DescribeTransitGatewayAttachments",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:24:15-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:24:08-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:23:47-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:23:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:23:14-05:00",
+      "event": "LookupEvents",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:22:56-05:00",
+      "event": "ListResources",
+      "user": "resource-explorer-2",
+      "source": "cloudcontrolapi.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:22:55-05:00",
+      "event": "ListChannels",
+      "user": "resource-explorer-2",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:22:55-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:22:39-05:00",
+      "event": "LookupEvents",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:21:08-05:00",
+      "event": "DescribeTransitGatewayAttachments",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:21:07-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:20:32-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:20:06-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:19:26-05:00",
+      "event": "LookupEvents",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:18:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:16:18-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:16:18-05:00",
+      "event": "ListDashboards",
+      "user": "resource-explorer-2",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:16:03-05:00",
+      "event": "SearchTransitGatewayRoutes",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:15:52-05:00",
+      "event": "SearchTransitGatewayRoutes",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:14:12-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:13:38-05:00",
+      "event": "DescribeTransitGatewayRouteTables",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:13:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:12:07-05:00",
+      "event": "GetBucketAcl",
+      "user": null,
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:11:56-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:09:43-05:00",
+      "event": "GetBucketAcl",
+      "user": null,
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:09:17-05:00",
+      "event": "ListEventIntegrations",
+      "user": "resource-explorer-2",
+      "source": "app-integrations.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:09:17-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:08:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:05:06-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:56-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:29-05:00",
+      "event": "DescribeSnapshots",
+      "user": "resource-explorer-2",
+      "source": "elasticache.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:29-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:19-05:00",
+      "event": "ListResources",
+      "user": "resource-explorer-2",
+      "source": "cloudcontrolapi.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:19-05:00",
+      "event": "ListGuardrails",
+      "user": "resource-explorer-2",
+      "source": "bedrock.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:19-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:04:00-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 22:03:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:58:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:57:55-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:54:08-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:53:47-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:53:16-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0fee0dd1703c257d5",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:52:00-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:52:00-05:00",
+      "event": "ListConnections",
+      "user": "resource-explorer-2",
+      "source": "codestar-connections.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:50:43-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:50:43-05:00",
+      "event": "ListInstances",
+      "user": "resource-explorer-2",
+      "source": "connect.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:49:21-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:49:21-05:00",
+      "event": "ListAssistants",
+      "user": "resource-explorer-2",
+      "source": "qconnect.amazonaws.com"
+    },
+    {
+      "region": "ap-northeast-1",
+      "time": "2026-02-09 21:48:27-05:00",
+      "event": "ListStorageConfigurations",
+      "user": "resource-explorer-2",
+      "source": "ivs.amazonaws.com"
+    }
+  ],
+  "saopaulo": [
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:23:15-05:00",
+      "event": "LookupEvents",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:22:40-05:00",
+      "event": "LookupEvents",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:21:27-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:21:27-05:00",
+      "event": "ListClusters",
+      "user": "resource-explorer-2",
+      "source": "eks.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:21:08-05:00",
+      "event": "DescribeTransitGatewayAttachments",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:21:08-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:20:33-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:19:27-05:00",
+      "event": "LookupEvents",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:19:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:16:40-05:00",
+      "event": "SearchTransitGatewayRoutes",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:14:28-05:00",
+      "event": "DescribeVerifiedAccessEndpoints",
+      "user": "resource-explorer-2",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:14:28-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:14:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:14:09-05:00",
+      "event": "DescribeTransitGatewayRouteTables",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:13:55-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:12:07-05:00",
+      "event": "GetBucketAcl",
+      "user": null,
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:10:31-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:10:20-05:00",
+      "event": "DescribeTransitGateways",
+      "user": "terraform",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:09:43-05:00",
+      "event": "GetBucketAcl",
+      "user": null,
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:09:18-05:00",
+      "event": "GetTrail",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:09:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:06:57-05:00",
+      "event": "ListTrails",
+      "user": "terraform",
+      "source": "cloudtrail.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:06:02-05:00",
+      "event": "DescribeDBInstances",
+      "user": "terraform",
+      "source": "rds.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:04:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:03:50-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:03:50-05:00",
+      "event": "DescribeIpamResourceDiscoveryAssociations",
+      "user": "resource-explorer-2",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 22:03:43-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:59:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:54:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:53:44-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:53:32-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:52:18-05:00",
+      "event": "GetDatabases",
+      "user": "resource-explorer-2",
+      "source": "glue.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:52:18-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:51:37-05:00",
+      "event": "DescribeVpcs",
+      "user": "ElasticLoadBalancing",
+      "source": "ec2.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:51:36-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:49:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:44:38-05:00",
+      "event": "ListArchives",
+      "user": "resource-explorer-2",
+      "source": "events.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:44:38-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:44:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:44:00-05:00",
+      "event": "ListInstanceAssociations",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:42:27-05:00",
+      "event": "DescribeCacheParameterGroups",
+      "user": "resource-explorer-2",
+      "source": "elasticache.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:42:27-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:39:20-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:39:20-05:00",
+      "event": "DescribeSnapshots",
+      "user": "resource-explorer-2",
+      "source": "memorydb.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:39:14-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:38:23-05:00",
+      "event": "ListStorageLensConfigurations",
+      "user": "resource-explorer-2",
+      "source": "s3.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:38:23-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:35:27-05:00",
+      "event": "ListMeshes",
+      "user": "resource-explorer-2",
+      "source": "appmesh.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:35:27-05:00",
+      "event": "AssumeRole",
+      "user": null,
+      "source": "sts.amazonaws.com"
+    },
+    {
+      "region": "sa-east-1",
+      "time": "2026-02-09 21:34:15-05:00",
+      "event": "UpdateInstanceInformation",
+      "user": "i-0cc922bbb78d84820",
+      "source": "ssm.amazonaws.com"
+    }
+  ]
+}
+{
+  "actions": [
+    {
+      "action": "ALLOW",
+      "hits": "3"
+    }
+  ],
+  "top_ips": [
+    {
+      "httpRequest.clientIp": "--reacted--",
+      "hits": "1"
+    },
+    {
+      "httpRequest.clientIp": "--reacted--",
+      "hits": "1"
+    },
+    {
+      "httpRequest.clientIp": "--reacted--",
+      "hits": "1"
+    }
+  ]
+}
