@@ -133,9 +133,9 @@ B) A short written explanation:
 
 ## Deliverable C - Haiku
 
-Chip can be spicy
-Chip can be bland or spicy
-Eat more chips today
+チューバッカには毛皮がある。
+その毛皮はとてもふわふわだ。
+今すぐその毛皮を撫でなければならない。
 
 ## Deliverable D
 
